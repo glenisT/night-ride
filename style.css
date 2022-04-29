@@ -1,0 +1,13 @@
+html
+{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, black 15%, rgb(0, 31, 172));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.road
+{
+    background-color: black;
+}
