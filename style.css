@@ -2,12 +2,24 @@ html
 {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to bottom, black 15%, rgb(0, 31, 172));
+    background-image: linear-gradient(to bottom, rgb(19, 19, 19) 5%, rgb(3, 37, 189));
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.container
+{
+    display: flex;
+    justify-content: center;
+}
+
 .road
 {
-    background-color: black;
+    background-image: linear-gradient(to top, rgb(34, 34, 34) 10%, rgb(0, 0, 0) );
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: black; */
+    height: 90vh;
+    width: 40vh;
+    transform: perspective(1em) rotateX(12deg);
 }
