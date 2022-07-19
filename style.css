@@ -5,12 +5,14 @@ html
     background-image: linear-gradient(to bottom, rgb(19, 19, 19) 5%, rgb(3, 37, 189));
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 .container
 {
     display: flex;
     justify-content: center;
+    border: 1px solid red;
 }
 
 .road
@@ -20,6 +22,17 @@ html
     background-size: cover;
     /* background-color: black; */
     height: 90vh;
-    width: 40vh;
+    width: 25vw;
     transform: perspective(1em) rotateX(12deg);
+}
+
+.moon
+{
+    height: 150px;
+    width: 150px;
+    /* height: 160px;
+    width: 160px; */
+    border-radius: 50%;
+    background-color: azure;
+    margin-left: ;
 }
