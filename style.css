@@ -22,17 +22,27 @@ html
     background-size: cover;
     /* background-color: black; */
     height: 90vh;
-    width: 25vw;
-    transform: perspective(1em) rotateX(12deg);
+    width: 20vw;
+    transform: perspective(2em) rotateX(15deg);
+    position: absolute;
 }
 
 .moon
 {
     height: 150px;
     width: 150px;
-    /* height: 160px;
-    width: 160px; */
-    border-radius: 50%;
+    border-radius: 100%;
     background-color: azure;
-    margin-left: ;
+    margin-left: 60vw;
+}
+
+.moon-spots
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: rgb(219, 236, 236);
+    margin-top: 25%;
+    margin-left: 15%;
+    box-shadow: 60px -18px 0 10px rgb(219, 236, 236), 50px 55px 0 3px rgb(219, 236, 236);
 }
