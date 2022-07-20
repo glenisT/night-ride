@@ -58,3 +58,12 @@ html
     margin-left: 15%;
     box-shadow: 60px -18px 0 10px rgb(219, 236, 236), 50px 55px 0 3px rgb(219, 236, 236);
 }
+
+.stars
+{
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+}
