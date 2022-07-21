@@ -7,6 +7,15 @@
     }
 }
 
+@keyframes starshine {
+    from{
+        box-shadow: 0 0 2px 2px rgb(190, 242, 255);
+    }
+    to{
+        box-shadow: 0 0 3px 3px rgb(190, 242, 255);
+    }
+}
+
 html
 {
     height: 100%;
@@ -66,4 +75,5 @@ html
     border-radius: 50%;
     background-color: white;
     position: absolute;
+    animation: starshine 1.5s infinite alternate ease-in-out;
 }
