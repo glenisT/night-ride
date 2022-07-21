@@ -78,11 +78,7 @@ for (let i = 0; i < stars.length; i++) {
     if (marginTs[i] >= 20) {
         stars[i].style.opacity = 100 - marginTs[i] + "%";
     }
-    console.log(marginTs[i] + 'vh ' + marginRs[i] + 'vw ' + marginBs[i] + 'vh ' + marginLs[i] + 'vw ')
 }
-
-console.log(marginTs.length);
-console.log(stars[1].style);
 
 // setInterval(() => {
 //     var div = document.createElement('div');
