@@ -89,11 +89,6 @@ html
     height: 33vh;
 }
 
-.roadContainer
-{
-    border: 1px solid green;
-}
-
 .road
 {
     background-image: linear-gradient(to top, rgb(34, 34, 34) 10%, rgb(0, 0, 0) );
@@ -110,15 +105,14 @@ html
     animation: turning 6s infinite alternate ease-in-out;
 }
 
-/* .portal
+.portal
 {
     height: 340px;
     width: 340px;
     margin-top: -70vh;
-    margin-left: 42vw;
     border-radius: 100%;
     background-color: aliceblue;
-} */
+}
 
 .line
 {
@@ -138,7 +132,6 @@ html
     margin-left: 60vw;
     margin-top: 2vh;
     animation: moonshine 1.5s infinite alternate ease-in-out;
-    z-index: 1;
 }
 
 .moon-spots
