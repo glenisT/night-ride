@@ -21,7 +21,31 @@
         margin-top: 0%;
     }
     to{
-        margin-top: 100%;
+        margin-top: 22%;
+    }
+}
+
+@keyframes turning {
+    0%{
+        left: 40%;
+        transform: perspective(2em) rotateX(15deg)
+    }
+    25%
+    {
+        left: 43%;
+        transform: perspective(1.9em) rotateX(15deg)
+    }
+    50%{
+        left: 40%;
+        transform: perspective(2em) rotateX(15deg)
+    }
+    75%{
+        left: 37%;
+        transform: perspective(1.92em) rotateX(15deg)
+    }
+    100%{
+        left: 40%;
+        transform: perspective(2em) rotateX(15deg)
     }
 }
 
@@ -54,7 +78,8 @@ html
     transform: perspective(2em) rotateX(15deg);
     position: absolute;
     display: grid;
-    grid-template-rows: repeat(40, 5%);
+    grid-template-rows: repeat(10, 5%);
+    animation: turning 6s infinite alternate ease-in-out;
 }
 
 .line
@@ -63,7 +88,7 @@ html
     width: 7%;
     background-color: white;
     margin-left: 50%;
-    animation: riding 2s infinite forwards;
+    animation: riding 0.1s infinite forwards;
 }
 
 .moon
