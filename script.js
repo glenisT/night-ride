@@ -75,19 +75,22 @@ let marginLs = [Math.floor((Math.random() * 0) + 1).toString(), Math.floor((Math
 
 for (let i = 0; i < stars.length; i++) {
     stars[i].style.margin = marginTs[i] + 'vh ' + marginRs[i] + 'vw ' + marginBs[i] + 'vh ' + marginLs[i] + 'vw ';
+    if (marginTs[i] >= 20) {
+        stars[i].style.opacity = 100 - marginTs[i] + "%";
+    }
     console.log(marginTs[i] + 'vh ' + marginRs[i] + 'vw ' + marginBs[i] + 'vh ' + marginLs[i] + 'vw ')
 }
 
 console.log(marginTs.length);
 console.log(stars[1].style);
 
-setInterval(() => {
-    var div = document.createElement('div');
-    div.style.height = "17%";
-    div.style.width = "7%";
-    div.style.backgroundColor = "white";
-    div.style.marginLeft = "50%";
-    div.style.animation = "riding 1s infinite forwards ease-in-out";
-    document.getElementById('linecontainer').appendChild(div);
-    console.log(div.style)
-}, 100);
+// setInterval(() => {
+//     var div = document.createElement('div');
+//     div.style.height = "17%";
+//     div.style.width = "7%";
+//     div.style.backgroundColor = "white";
+//     div.style.marginLeft = "50%";
+//     div.style.animation = "riding 1s infinite forwards ease-in-out";
+//     document.getElementById('linecontainer').appendChild(div);
+//     console.log(div.style)
+// }, 100);
