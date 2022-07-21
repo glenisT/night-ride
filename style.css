@@ -63,7 +63,7 @@ html
     width: 7%;
     background-color: white;
     margin-left: 50%;
-    animation: riding 1s infinite forwards ease-in-out;
+    animation: riding 2s infinite forwards;
 }
 
 .moon
