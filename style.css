@@ -110,6 +110,15 @@ html
     animation: turning 6s infinite alternate ease-in-out;
 }
 
+.outterline
+{
+    height: 90vh;
+    width: 5%;
+    background-color: rgb(172, 75, 41);
+    margin-left: 5%;
+    box-shadow: 17vw 0 0 0 rgb(172, 75, 41);
+}
+
 /* .portal
 {
     height: 340px;
