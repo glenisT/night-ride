@@ -49,27 +49,37 @@
 
 @keyframes turning {
     0%{
-        left: 40%;
+        left: 0%;
         transform: perspective(2em) rotateX(15deg)
     }
     25%
     {
-        left: 43%;
+        left: 3%;
         transform: perspective(1.9em) rotateX(15deg)
     }
     50%{
-        left: 40%;
+        left: 0%;
         transform: perspective(2em) rotateX(15deg)
     }
     75%{
-        left: 37%;
+        left: -4%;
         transform: perspective(1.92em) rotateX(15deg)
     }
     100%{
-        left: 40%;
+        left: 0%;
         transform: perspective(2em) rotateX(15deg)
     }
 }
+
+@keyframes portalWarp {
+    0%{
+        left: 40%;
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 0% 100%;
+    }
+  }
 
 html
 {
@@ -92,6 +102,8 @@ html
 .roadContainer
 {
     border: 1px solid green;
+    /* display: flex;
+    justify-content: center; */
 }
 
 .road
@@ -108,7 +120,7 @@ html
     display: grid;
     grid-template-rows: repeat(70, 10%);
     animation: turning 6s infinite alternate ease-in-out;
-    z-index: 1;
+    z-index: 3;
 }
 
 .outterline
@@ -131,14 +143,17 @@ html
 
 .portal
 {
-    position: absolute;
-    height: 340px;
-    width: 340px;
-    margin-top: -70vh;
-    margin-left: 42vw;
+    position: fixed;
+    width: 34vh;
+    height: 34vh;
+    margin-top: -20vh;
     border-radius: 100%;
     background-color: aliceblue;
-    z-index: 0;
+    z-index: 2;
+
+    /* animation: portalWarp 10s linear infinite;
+    background-image: linear-gradient(0deg,#cf5c5c,#c19b4a,#def2a0,#c6ee4a,#42eca6,#64b3d9,#208ea2,#498ada,#5b73df,#897ed3,#cf5c5c,#c19b4a);
+    background-size: 100% 1100%; */
 }
 
 .moon
@@ -150,7 +165,7 @@ html
     margin-left: 60vw;
     margin-top: 2vh;
     animation: moonshine 1.5s infinite alternate ease-in-out;
-    z-index: 2;
+    z-index: 1;
 }
 
 .moon-spots
@@ -172,5 +187,5 @@ html
     background-color: white;
     position: absolute;
     animation: starshine 1.5s infinite alternate ease-in-out;
-    z-index: -1;
+    z-index: 0;
 }
