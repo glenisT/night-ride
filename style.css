@@ -203,3 +203,5 @@ html
     animation: starshine 1.5s infinite alternate ease-in-out;
     z-index: 0;
 }
+
+/* make media query for road in small screens to make it wider and for the 'riding' animation to appear more fluent(switch 10% to 2vw or em) */
