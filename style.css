@@ -107,9 +107,10 @@ html
 .container
 {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     border: 1px solid red;
     height: 33vh;
+    width: 85vw;
 }
 
 .roadContainer
@@ -170,8 +171,9 @@ html
 
 .moon
 {
-    height: 150px;
-    width: 150px;
+    position: fixed;
+    height: 175px;
+    width: 175px;
     border-radius: 100%;
     background-color: azure;
     margin-left: 60vw;
