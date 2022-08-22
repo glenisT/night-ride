@@ -108,14 +108,14 @@ html
 {
     display: flex;
     justify-content: flex-end;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 33vh;
     width: 85vw;
 }
 
 .roadContainer
 {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: flex;
     justify-content: center;
 }
