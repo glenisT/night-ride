@@ -167,6 +167,17 @@ html
     animation: portalWarp 6s linear infinite;
     background-image: linear-gradient(0deg,#cf5c5c,#c19b4a,#def2a0,#c6ee4a,#42eca6,#64b3d9,#208ea2,#498ada,#5b73df,#897ed3,#cf5c5c,#c19b4a);
     background-size: 100% 1100%;
+
+    box-shadow:inset 10px 10px 15px 10px #897ed3de ,
+	inset 10px -10px 20px 15px #42eca5e0 ,
+	inset -10px -10px 20px 15px #cf5c5cf1 ,
+	inset -10px 10px 20px 15px #64b3d9 ,
+	50px 50px 50px 10px #cf5c5c ,
+	50px -50px 50px 10px #c19b4a ,
+	-50px -50px 50px 10px #c6ee4a ,
+	-50px 50px 50px 10px #42eca6 ;
+
+    opacity: 95%;
 }
 
 .moon
