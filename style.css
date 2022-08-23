@@ -157,9 +157,9 @@ html
 .portal
 {
     position: fixed;
-    width: 36vh;
-    height: 36vh;
-    margin-top: -20vh;
+    width: 55vh;
+    height: 55vh;
+    margin-top: -25vh;
     border-radius: 100%;
     background-color: aliceblue;
     z-index: 2;
@@ -215,4 +215,19 @@ html
     z-index: 0;
 }
 
-/* make media query for road in small screens to make it wider and for the 'riding' animation to appear more fluent(switch 10% to 2vw or em) */
+@media screen and (max-width: 600px) {
+
+    .portal
+    {
+        width: 30vh;
+        height: 30vh;
+        margin-top: -15vh;
+    }
+
+    .road
+    {
+        transform: perspective(1vh) rotateX(15deg) !important;
+        margin-top: -40vh;
+    }
+    
+}
