@@ -127,7 +127,8 @@ html
     background-size: cover;
     height: 90vh;
     width: 20vw;
-    transform: perspective(2em) rotateX(15deg);
+    /* transform: perspective(2em) rotateX(15deg) !important; */
+    transform: perspective(1vh) rotateX(10deg) !important;
     position: relative;
     margin-top: -33vh;
     display: grid;
